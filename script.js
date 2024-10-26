@@ -1151,4 +1151,64 @@ document.addEventListener('DOMContentLoaded', (event) => {
     x: 0,
     y: 0,
   });
+
+  gsap.to('#minerApp', {
+    scrollTrigger: {
+      trigger: '#minerApp',
+      start: 'top 70%',
+      end: '+=200',
+      scrub: 1,
+    },
+    opacity: 1,
+    x: 0,
+  });
+
+  gsap.to('#DownloadBlockDAG', {
+    scrollTrigger: {
+      trigger: '#DownloadBlockDAG',
+      start: 'top 65%',
+      end: '+=200',
+      scrub: 1,
+    },
+    opacity: 1,
+    x: 0,
+  });
+
+  gsap.to('#appstore', {
+    scrollTrigger: {
+      trigger: '#appstore',
+      start: 'top 60%',
+      end: '+=200',
+      scrub: 1,
+    },
+    opacity: 1,
+    x: 0,
+  });
+
+  gsap.to('#playstore', {
+    scrollTrigger: {
+      trigger: '#playstore',
+      start: 'top 60%',
+      end: '+=200',
+      scrub: 1,
+    },
+    opacity: 1,
+    x: 0,
+  });
 });
+
+let currentIndex = 0;
+
+const interval = setInterval(() => {
+  currentIndex++;
+
+  console.log(currentIndex);
+
+  if (currentIndex === 10) {
+    clearInterval(interval);
+  }
+}, 3000);
+
+console.log(currentIndex);
+
+console.log(interval);
