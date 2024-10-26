@@ -16,14 +16,12 @@ let forCommunity = document.getElementById('forCommunity');
 let forMechanics = document.getElementById('forMechanics');
 let forTestnet = document.getElementById('forTestnet');
 
-console.log(hamburger)
+hamburger.addEventListener('click', () => {
+  headerContainer.classList.toggle('style_activeMega__Veh5T');
 
-// hamburger.addEventListener('click', () => {
-//   headerContainer.classList.toggle('style_activeMega__Veh5T');
-
-//   hamburger.classList.toggle('style_active__v2efS');
-//   navHamburger.classList.toggle('style_active__TEbWu');
-// });
+  hamburger.classList.toggle('style_active__v2efS');
+  navHamburger.classList.toggle('style_active__TEbWu');
+});
 
 about.addEventListener('click', () => {
   headerContainer.classList.toggle('style_activeMega__Veh5T');
